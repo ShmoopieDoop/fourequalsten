@@ -1,3 +1,5 @@
+import sys
+
 GOAL_NUMBER = 10
 
 
@@ -71,7 +73,7 @@ def check_ops(combos, op_combos):
 
 
 def main():
-    n = 5181
+    n = int(sys.argv[1])
     l = list(str(n))
     combos = generate_combos(l)
     op_combos = generate_op_combos(len(l) - 1)
